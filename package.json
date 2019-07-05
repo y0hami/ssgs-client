@@ -1,0 +1,59 @@
+{
+  "name": "ssgs-client",
+  "version": "1.0.0",
+  "description": "SteelSeries GameSense(TM) Client (Unofficial)",
+  "keywords": [
+    "steelseries",
+    "gamesense",
+    "client"
+  ],
+  "homepage": "https://ssgs-client.hammy2899.dev",
+  "bugs": {
+    "url": "https://github.com/hammy2899/ssgs-client/issues"
+  },
+  "license": "MIT",
+  "author": "Sean Hamilton <sean@hamistudios.com>",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md",
+    "dist/",
+    "src/",
+    "package.json",
+    "yarn.lock"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hammy2899/ssgs-client.git"
+  },
+  "scripts": {
+    "build:clean": "rm -rf dist",
+    "build:tsc": "tsc",
+    "build": "npm-run-all build:clean build:tsc",
+    "lint": "eslint --ext .ts src",
+    "docs:clean": "rm -rf docs",
+    "docs:typedoc": "typedoc",
+    "docs:cname": "echo ssgs-client >> docs/CNAME",
+    "docs": "npm-run-all docs:clean docs:typedoc docs:cname"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "fs-extra": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "@types/node": "^12.0.12",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb-typescript": "^4.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^8.3.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.5.2"
+  },
+  "private": false
+}

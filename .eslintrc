@@ -1,0 +1,9 @@
+{
+  "extends": "airbnb-typescript/base",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "lines-between-class-members": "off"
+  }
+}

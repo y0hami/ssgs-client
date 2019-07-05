@@ -1,0 +1,21 @@
+enum EventIcon {
+  NO_ICON = 0,
+  HEALTH,
+  ARMOR,
+  AMMUNITION,
+  MONEY,
+  FLASH_EXPLOSION,
+  KILLS,
+  HEADSHOT,
+  HELMET,
+  HUNGER,
+  AIR_BREATH,
+  COMPASS,
+  TOOL_PICKAXE,
+  MANA_POTION,
+  CLOCK,
+  LIGHTNING,
+  ITEM_BACKPACK,
+}
+
+export default EventIcon;
