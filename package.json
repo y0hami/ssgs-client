@@ -36,7 +36,8 @@
     "docs:clean": "rm -rf docs",
     "docs:typedoc": "typedoc",
     "docs:cname": "echo ssgs-client >> docs/CNAME",
-    "docs": "npm-run-all docs:clean docs:typedoc docs:cname"
+    "docs:nojekyll": "touch docs/.nojekyll",
+    "docs": "npm-run-all docs:clean docs:typedoc docs:cname docs:nojekyll"
   },
   "dependencies": {
     "axios": "^0.19.0",
